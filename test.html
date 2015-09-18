@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-    document.body.innerHTML = navigator.userAgent + '<br>' + document.cookie;
+    window.onload = function() {
+        document.body.innerHTML = navigator.userAgent + '<br>' + document.cookie;
+    }
     </script>
 </head>
 <body>
