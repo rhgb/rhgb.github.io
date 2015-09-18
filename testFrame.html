@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>test frame</title>
     <script>
+        function para(text) {
+            var p = document.createElement('p');
+            p.textContent = text;
+            return p;
+        }
         window.onload = function() {
             var ifr = document.createElement('iframe');
 //            ifr.src = 'http://mm.dianping.com/hui/mm/shop?shopId=4281554';
@@ -13,9 +18,7 @@
             document.body.appendChild(ifr);
             var disp = document.querySelector('.display');
             ifr.contentWindow.addEventListener('error', function (e) {
-                var p = document.createElement('p');
-                p.textContent = e.message;
-                disp.appendChild(p);
+                disp.appendChild(para(e.message));
             });
         }
     </script>

@@ -9,6 +9,14 @@
 
     <link rel="stylesheet" href="//j1.s2.dpfile.com/concat/~mod~util-m-confirm~1.2.0~css~style.css,~mod~app-hui-mm~0.2.6~css~cashier.css" type="text/css"/>
     <script>var _hip=[['_setPVInitData',{module:'hui_mm_coupon_pay'}]];</script>
+    <script>
+        window.addEventListener('load', function () {
+            if (!window.neuron || !neuron.conf || !neuron.conf.loaded) {
+                throw new Error('neuron disappeared');
+            }
+            throw new Error(Object.keys(neuron.conf.graph).join(',') + '; ' + Object.keys(neuron.conf.loaded).join(','));
+        })
+    </script>
 </head>
 
 <body>
