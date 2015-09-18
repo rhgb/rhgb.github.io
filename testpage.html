@@ -15,7 +15,7 @@
                 throw new Error('neuron disappeared');
             }
             throw new Error(Object.keys(neuron.conf.graph).join(',') + '; ' + Object.keys(neuron.conf.loaded).join(','));
-        })
+        });
     </script>
 </head>
 
@@ -63,7 +63,7 @@
     </div>
     <div class="list-order "><span class="list-pic"></span><a href="#" class="J-list-order list-link">闪惠买单记录</a></div>
 </div>
-<script src="http://example.com/test.js"></script>
+<!--<script async src="http://example.com/test.js"></script>-->
 <script src="//j3.s2.dpfile.com/mod/neuron/7.2.0/neuron.js" id="neuron-js"></script><script>neuron.config({path: "//j{n}.s2.dpfile.com/mod", loaded:["app-hui-mm@0.2.6/entries/cashier.js","wepp-module-event@0.2.1","wepp-module-overlay@0.3.0","json@1.0.1","underscore@1.5.3","openapp2@1.1.4","huatuo@0.1.10","huatuo-transaction@1.0.0","util-m-confirm@1.2.0","storage@0.2.4","unified-share@0.4.1","hippo@1.2.11"], graph:{"0":["0.2.6",{"unified-share@~0.4.1":1,"huatuo-transaction@^1.0.0":2,"zepto@^1.2.1":3,"util-m-confirm@^1.2.0":4,"storage@~0.2.4":7,"huatuo@~0.1.7":10,"openapp2@^1.1.4":11,"hippo@^1.2.7":12,"json@^1.0.1":8}],"1":["0.4.1"],"2":["1.0.0"],"3":["1.2.2"],"4":["1.2.0",{"zepto@^1.2.1":3,"wepp-module-overlay@~0.3.0":5}],"5":["0.3.0",{"zepto@^1.2.1":3,"wepp-module-event@~0.2.0":6}],"6":["0.2.1"],"7":["0.2.4",{"json@~1.0.0":8,"underscore@~1.5.3":9}],"8":["1.0.1"],"9":["1.5.3"],"10":["0.1.10"],"11":["1.1.4"],"12":["1.2.11"],"_":{"app-hui-mm@*":0}}})</script>
 <script async src="//j2.s2.dpfile.com/mod/hippo/1.2.11/hippo.js"></script>
 <script async src="//j2.s2.dpfile.com/mod/unified-share/0.4.1/unified-share.js"></script>
@@ -77,6 +77,15 @@
 <script async src="//j1.s2.dpfile.com/mod/json/1.0.1/json.js"></script>
 <script async src="//j1.s2.dpfile.com/mod/huatuo-transaction/1.0.0/huatuo-transaction.js"></script>
 <script async src="//j3.s2.dpfile.com/mod/util-m-confirm/1.2.0/util-m-confirm.js"></script>
+<script>
+    [].slice.call(document.querySelectorAll('script')).filter(function (el) {
+        return el.async;
+    }).forEach(function (el) {
+        el.addEventListener('error', function (e) {
+            throw new Error('ERRLOD ' + el.src);
+        });
+    })
+</script>
 <script>
     facade({entry:"app-hui-mm/entries/cashier.js", data: {
         shopId : 4281554,
