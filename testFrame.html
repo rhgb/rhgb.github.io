@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>test frame</title>
+    <script>
+        window.onload = function() {
+            var ifr = document.createElement('iframe');
+//            ifr.src = 'http://mm.dianping.com/hui/mm/shop?shopId=4281554';
+            ifr.src = 'testpage.html?shopId=4281554';
+            ifr.height = window.innerHeight;
+            document.body.appendChild(ifr);
+            var disp = document.querySelector('.display');
+            ifr.contentWindow.addEventListener('error', function (e) {
+                var p = document.createElement('p');
+                p.textContent = e.message;
+                disp.appendChild(p);
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="display"></div>
+</body>
+</html>

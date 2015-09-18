@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>京可酸菜鱼凤凰西街店</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="//j1.s2.dpfile.com/concat/~mod~util-m-confirm~1.2.0~css~style.css,~mod~app-hui-mm~0.2.6~css~cashier.css" type="text/css"/>
+    <script>var _hip=[['_setPVInitData',{module:'hui_mm_coupon_pay'}]];</script>
+</head>
+
+<body>
+<div class="container-wrapper">
+    <div class="data-wrapper">
+        <div class="cashier-container">
+            <div class="amount-total" data-placeholder="询问服务员后输入">
+                <div class="label">消费总额：</div>
+                <input type="number" class="amount J-total-amount" autocomplete="off" step="0.01"/>
+
+                <div class="input-prefix"></div>
+            </div>
+
+            <!--点评优惠信息 未开始-->
+            <div class="dp-promo j-dp-no-start"></div>
+
+            <div class="no-discount-switch">
+                <label class="checkbox">
+                    <input type="checkbox" class="J-discount-switch" autocomplete="off"/>
+                    <span class="checkbox"></span>
+                    输入不参与优惠金额
+                </label>
+                <a href="javascript:" class="no-discount-help"><i class="ic-question"></i></a>
+            </div>
+            <div class="amount-no-discount hide J-no-discount-amount-container" data-placeholder="询问服务员后输入">
+                <span class="label">不参与优惠金额：</span>
+                <input type="number" class="amount J-no-discount-amount" autocomplete="off" step="0.01"/>
+
+                <div class="input-prefix"></div>
+            </div>
+
+            <ul class="discount J-offer-list"></ul>
+            <ul class="discount dp-promo-start J-dp-desc"></ul>
+
+            <!--小号的同学进来-->
+            <ul class="discount dp-promo-start J-dp-special-desc"></ul>
+
+            <div class="summary j-s-amount">
+                <div class="title">实付金额：</div>
+                <div class="amount J-summary-amount"></div>
+            </div>
+            <div class="btn-pay J-submit-payment disabled">微信支付</div>
+        </div>
+    </div>
+    <div class="list-order "><span class="list-pic"></span><a href="#" class="J-list-order list-link">闪惠买单记录</a></div>
+</div>
+<script src="http://example.com/test.js"></script>
+<script src="//j3.s2.dpfile.com/mod/neuron/7.2.0/neuron.js" id="neuron-js"></script><script>neuron.config({path: "//j{n}.s2.dpfile.com/mod", loaded:["app-hui-mm@0.2.6/entries/cashier.js","wepp-module-event@0.2.1","wepp-module-overlay@0.3.0","json@1.0.1","underscore@1.5.3","openapp2@1.1.4","huatuo@0.1.10","huatuo-transaction@1.0.0","util-m-confirm@1.2.0","storage@0.2.4","unified-share@0.4.1","hippo@1.2.11"], graph:{"0":["0.2.6",{"unified-share@~0.4.1":1,"huatuo-transaction@^1.0.0":2,"zepto@^1.2.1":3,"util-m-confirm@^1.2.0":4,"storage@~0.2.4":7,"huatuo@~0.1.7":10,"openapp2@^1.1.4":11,"hippo@^1.2.7":12,"json@^1.0.1":8}],"1":["0.4.1"],"2":["1.0.0"],"3":["1.2.2"],"4":["1.2.0",{"zepto@^1.2.1":3,"wepp-module-overlay@~0.3.0":5}],"5":["0.3.0",{"zepto@^1.2.1":3,"wepp-module-event@~0.2.0":6}],"6":["0.2.1"],"7":["0.2.4",{"json@~1.0.0":8,"underscore@~1.5.3":9}],"8":["1.0.1"],"9":["1.5.3"],"10":["0.1.10"],"11":["1.1.4"],"12":["1.2.11"],"_":{"app-hui-mm@*":0}}})</script>
+<script async src="//j2.s2.dpfile.com/mod/hippo/1.2.11/hippo.js"></script>
+<script async src="//j2.s2.dpfile.com/mod/unified-share/0.4.1/unified-share.js"></script>
+<script async src="//j3.s2.dpfile.com/mod/wepp-module-overlay/0.3.0/wepp-module-overlay.js"></script>
+<script async src="//j2.s2.dpfile.com/mod/underscore/1.5.3/underscore.js"></script>
+<script async src="//j1.s2.dpfile.com/mod/openapp2/1.1.4/openapp2.js"></script>
+<script async src="//j3.s2.dpfile.com/mod/huatuo/0.1.10/huatuo.js"></script>
+<script async src="//j1.s2.dpfile.com/mod/wepp-module-event/0.2.1/wepp-module-event.js"></script>
+<script async src="//j2.s2.dpfile.com/mod/app-hui-mm/0.2.6/entries/cashier.js"></script>
+<script async src="//j3.s2.dpfile.com/mod/storage/0.2.4/storage.js"></script>
+<script async src="//j1.s2.dpfile.com/mod/json/1.0.1/json.js"></script>
+<script async src="//j1.s2.dpfile.com/mod/huatuo-transaction/1.0.0/huatuo-transaction.js"></script>
+<script async src="//j3.s2.dpfile.com/mod/util-m-confirm/1.2.0/util-m-confirm.js"></script>
+<script>
+    facade({entry:"app-hui-mm/entries/cashier.js", data: {
+        shopId : 4281554,
+        shopName : "京可酸菜鱼凤凰西街店",
+        userId : 0,
+        amount : 0,
+        nodiscount : 0,
+        authUrl : "http://m.dianping.com/thirdlogin/auth?aType=1&np=1",
+        realPay : "",
+        isLogin: 1,
+        promoString: "",
+        thirdPartyOrderType: 0,
+        thirdPartyOrderId: "0",
+        outBizType: 0,
+        outBizId: "",
+        generateOffers: function(){
+            !function(t){function n(){return {"shopDeals":[{"offerID":1197325,"businessType":10,"channel":12,"showStatus":true,"order":1,"needLogin":false,"defaultValue":"0","title":"每满100减5，最多减20元","desc":"","type":2,"baseDeductionDO":{"stepCashDeductionDO":{"step":100,"deduce":5,"limitTime":4},"order":0}}],"payHint":"","effectTime":""}}function e(t,n){var e=[n],u={activities:e,amount:0,level:null};if(t=parseFloat(t),u.activities.length>0&&t>0){var o=u.activities.map(function(n){return 10==n.status?n.levels.filter(function(n){return t>=parseFloat(n.full)}).reduce(function(t,n){return t&&t.full>=n.full?t:n},null):void 0}).filter(Boolean);o&&(u.level=o),o.forEach(function(n){n.status=10,t-=parseFloat(n.cut)}),0>=t&&(t=.01),u.amount=""+Math.round(100*t)/100}return u}var u=function(t){return Math.round(100*t)/100},o={discount:function(t){return function(n){var e=n*t;return n-e}},deduct:function(t){if(!t)return null;var n=t.step,e=t.limitTime,u=t.deduce;return function(t){var o=0;return o=0==n?u:e>0&&Math.floor(t/n)>e?e*u:Math.floor(t/n)*u}}},r=function(t){return 1==t.type?o.discount(t.baseDeductionDO.ratio):2==t.type||11==t.type?o.deduct(t.baseDeductionDO.stepCashDeductionDO):null},l=function(t,n,e){if(t&&t.length){var u=t.reduce(function(t,n){return t[n.order]?t[n.order].push(n):t[n.order]=[n],t},{}),o=Object.keys(u).sort(function(t,n){return+t-+n}).map(function(t){return u[t]});o.forEach(function(t){if(null==n)t.forEach(function(t){a(t,null,e)});else{var u=0;t.forEach(function(t){a(t,n,e),u+=t.deduction}),n-=u}})}if(null!=n&&n>0)var r=n;else r=0;return r},a=function(t,n,e){if(t.status=10,t.showDeduction=3!=t.type&&10!=t.type,null===n)return void(t.deduction=t.defaultValue);var o=r(t);t.deduction=o?u(o(n)):0};t.rule=function(t){var o=n()||[],r=(t.huiType,t.amount),a=t.channel,i={amount:0,offers:o,level:null},c={activities:[],amount:0,level:null},s=t.noDiscountAmount;s=parseFloat(s)||0;var f=0;return null!==r?(r=parseFloat(r)||0,f=parseFloat((100*r-100*s)/100),0>f&&(f=0,s=r)):s=0,i.amount=f,o.shopDeals&&o.shopDeals.length&&(i.amount=u(l(o.shopDeals,f,a)+s)),o.dpDeals&&10==o.dpDeals.status&&(c=e(i.amount,i.offers.dpDeals)),c.amount>0&&(i.amount=c.amount),c&&c.level&&(i.level=c.level),r&&0==i.amount&&(i.amount=.01),JSON.stringify(i)}}(this);
+        }
+    }});
+</script></body>
+
+</html>
